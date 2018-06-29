@@ -19,7 +19,8 @@ var syncMove = require('mapbox-gl-sync-move');
 var mapA = new mapboxgl.Map(..);
 var mapB = new mapboxgl.Map(..);
 
-syncMove(mapA, mapB);
+var clearSync = syncMove(mapA, mapB);
+clearSync()
 ```
 
 ## Developing
